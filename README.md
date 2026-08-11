@@ -1,5 +1,10 @@
 # Our OSF Preregistration Protocol
 
+## Visual Synthesis
+A comprehensive dashboard merging analytical insights from the research.
+
+![Visual Synthesis](./Assets/README.md/Visual-Synthesis.jpg)
+
 ## 1. Study Information
 
 ### 1.1. Project Title & Authors
