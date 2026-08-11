@@ -79,3 +79,4 @@ Running three large vision transformers simultaneously takes a massive toll on h
 * The entire stack is built with Python, PyTorch, Hugging Face Transformers, OpenCV, and Gradio for the final interactive web application.
 
 ---
+*Created as part of the SoftUni Deep Learning Course (July 2026).*
