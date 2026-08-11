@@ -2,20 +2,19 @@
 
 ## 1. Study Information
 
-### 1.1. Project Title
-* **Depth Estimation**
+### 1.1. Project Title & Authors
+* **Title:** Depth Estimation
+* **Author:** Dimo Dimov
+* **Affiliation:** Deep Learning 2026 Course, SoftUni
 
-### 1.2. Authors
-* **Dimo Dimov** (Deep Learning 2026 Course, SoftUni)
-
-### 1.3. Project Summary & Core Idea
+### 1.2. Project Summary & Core Idea
 * We want to figure out how far away objects are in a photo without training any deep-learning models from scratch. 
 * We take three of the best modern out-of-the-box models (`Depth Anything V1`, `Depth Anything V2`, and `Intel DPT`) and let each make its own prediction.
 * Then, we blend their outputs using four simple pixel-level fusion strategies: mean, median, maximum, and minimum.
 * To find out which approach is the most reliable, we measure their accuracy against real-world ground-truth values from the **NYU Depth V2 validation dataset (654 indoor images)**.
 * Finally, we pass the images through an object detector (`DETR`), a double-verification filter, and a smart vision-language model (`CLIP`) to profile scene difficulty and catch potential failures before they happen.
 
-### 1.4. Research Questions & Hypotheses (What We Expect to Find)
+### 1.3. Research Questions & Hypotheses (What We Expect to Find)
 * RQ1: Does combining the predictions of three standalone transformer models into a single ensemble give us a more reliable depth map than relying on just one network?
 * Hypothesis 1 (Core): We expect the **Pixel-Median Strategy** (`Strategy_Pixel-Median`) to perform best overall. It should filter out weird noise, extreme shadows, and specular glare much better than individual models, scoring the lowest Root Mean Squared Error (RMSE) across the 654 test images.
 * RQ2: Can zero-shot text-prompt analysis via CLIP successfully warn us when a room layout is too complex for standard computer vision models?
