@@ -1,5 +1,10 @@
 # Our OSF Preregistration Protocol
 
+## Project Evolution Visualization (Gource)
+A time-lapse representing the repository's structural growth and commit history.
+
+![Project Timeline Visualization](./Assets/README.md/Gource.gif)
+
 ## Visual Synthesis
 A comprehensive dashboard merging analytical insights from the research.
 
